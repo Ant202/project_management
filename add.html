@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="add-task">
+            <div>
+                <input id="title" type="text" placeholder="Title">
+                <label class="error" id="titleError">Title cannot be blank!</label>
+            </div>
+            <div class="scope">
+                <input name="scope" id="scope" placeholder="Scope"></input>
+                <label class="error" id="scopeError">Scope cannot be blank!</label>
+            </div>
+            <div class="datee">
+                <div class="dates">
+                    <div class="dateDiv">
+                       <div class="dateHolder">
+                        <label for="startDate">START:</label>
+                        <input id="startDate" type="datetime-local">
+                       </div>
+                        <label class="error" id="startError">Input a valid date and time!</label>
+                    </div>
+                    <div class="dateDiv">
+                        <div class="dateHolder">
+                            <label for="endDate">END:</label>
+                            <input id="endDate" type="datetime-local">
+                           </div>
+                        <label class="error" id="endError">Input a valid date and time!</label>
+                    </div>
+                </div>
+                <div class="labels">
+                    <label id="precedeEnd" class="error">End date can not precede Start or Current date!</label>
+                    <label id="precedeStart" class="error">Start date can not precede Current date!</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="addTask">Add Task</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+
+        <div class="showTask">
+            <!-- <div class="task">
+                <h3>Title</h3>
+                <p class="dateDisplays"><span id="showStart">Start</span><span id="showEnd">End</span></p>
+                <button id="viewTask">View</button>
+            </div> -->
+        </div>
+
+        <div class="add-task">
+            <div class="status-hold">
+                <p class="status"></p>
+            </div>
+            <div>
+                <input id="titleB" type="text" placeholder="Title" readonly>
+            </div>
+            <div>
+                <input id="scopeB" placeholder="Scope" readonly></input>
+            </div>
+            <div class="dates">
+                <p><span id="viewStart">Start</span> to <span id="viewEnd">End</span></p>
+            </div>
+            <div class="created">
+                <p>Created:</p>
+                <p id="today"></p>
+            </div>
+            <div class="buttons">
+                <button id="addTask">Edit Task</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
