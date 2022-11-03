@@ -1,10 +1,10 @@
-import Home from "./pages/home";
-import Start from "./pages/Start";
-import Register from "./pages/Register";
-import Danger from "./pages/Dangers";
-import Login from "./pages/Login";
-import Nav from "./components/Nav";
-import Report from "./components/Report";
+import Home from "../pages/home";
+import Start from "../pages/Start";
+import Register from "../pages/Register";
+import Danger from "../pages/Dangers";
+import Login from "../pages/Login";
+import Nav from "../components/Nav";
+import Report from "../components/Report";
 import { useState } from "react";
 
 function App() {
